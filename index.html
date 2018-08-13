@@ -1,852 +1,882 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-
-	<meta charset="UTF-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-<title>Сайт</title>
-
-<!--
-<script type="text/javascript"> 
-if (document.body.clientWidth <= 480) {
-window.onload = "http://vandm2.ucoz.net/index.html";
-}
-</script> -->
-
-<script type="text/javascript" language="JavaScript">
-function init() {
-var w = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-
-
-if (w <= 840){
-document.getElementById("poln").style.display = "none";
-document.getElementById("mal").style.display = "";
-}
-if (w >= 840){
-document.getElementById("mal").style.display = "none";
-document.getElementById("poln").style.display = "";
-}
-}
-</script>
-
-
-
-	<script type="text/javascript">
-function Input(){
-login_ok = false;
-user_name = "";
-password = "";
-user_name = prompt("слово","");
-user_name = user_name.toLowerCase();
-
-if (user_name=="подъезд" ) {
- login_ok=true;
-
-
-password = prompt("ещё раз слово","");
-password = password.toLowerCase();
-user = prompt("ещё разок","");
-user = user.toLowerCase();
-user1 = prompt("и ещё раз","");
-user1 = user1.toLowerCase();
-user2 = prompt("ещё разок","");
-user2 = user2.toLowerCase();
-user3 = prompt("ошиблась, вводи заного","");
-user3 = user3.toLowerCase();
-user4 = prompt("шучу, почти всё(повтори ввод)","");
-user4 = user4.toLowerCase();
-user5 = prompt("а теперь введи 'Сашенька-я тебя очень сильно люблю)' и не ошибись","");
-user5= user5.toLowerCase();
-user6 = prompt("и ещё введи 'ты всегда прав, а я нет'","");
-user6 = user6.toLowerCase();
-
-if (user_name=="подъезд" ) {
- login_ok=true;
-alert("ООООО, у тебя всё получилось) ты моя умничка))) Приезжай скорее я уже соскучился :-* ");
-}
-};
-
-
-if (login_ok==false) alert("сначало отгадай слово!");
-};
-
-
-
-
-</script>
-
-<script type="text/javascript">
-
-      
-        function calc() {
-            var type_design = document.getElementById("type_design"); //получаем ссылку на элемент Select (Тип дизайна)
-            var is_html = document.getElementById("is_html"); //получаем ссылку на чекбокс (Требуется верстка?)
-            var count = document.getElementById("count"); //получаем ссылку на элемент input (Кол-во вариантов)
-            var result = document.getElementById("result"); //получаем ссылку на элемент span, в него будем писать стоимость дизайна
-
-            var price = 0;
-            price += parseInt(type_design.options[type_design.selectedIndex].value);
-            price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
-            price = parseInt(count.value) * price;
-
-            result.innerHTML = price;
-        }
-
-        </script>
-
-
-<style>  
-
-</style>
-
-<style>
-   .bel{
-    color: #ded9d9; /* Цвет символа */
-   } 
-   .black{
-    color: black; /* Цвет символа */
-   } 
-</style>
-
-
-	<style>
-   p.dline {
-    line-height: 2.4;
-   }
-  </style>
-	 
-</head>
-
-
-
-
-
-
-
-
-
-
-
-
-<body onload="init()">
-<!-- Используется только для демонстрации -->
-
-
-
-
-	<div class="block3">
-		
-		
-		
-		
-		
-			<section id="cd-intro">
-				<div id="cd-intro-tagline">
-					
-					<img src="img/digital.png"><br>
-					<a href="" class="cd-btn"><img src="img/logo.png"></a><br><br>
-					<!--   <a href="" class="cd-btn">Мой сайт</a><br><br>   -->
-					<img src="img/vstup.png"><br>
-					
-				</div> <!-- #cd-intro-tagline -->
-			</section> <!-- #cd-intro -->
-
-		
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/reset.css">
 	  
-
-
-			<div class="cd-secondary-nav">
-				<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
-				<nav>
-					<ul>
-						<li>
-							<a href="#cd-placeholder-1">
-								<b><h3>О нас</h3></b>
-								<span></span><!-- icon -->
-							</a>
-						</li>
-						<li>
-							<a href="#cd-placeholder-2">
-								<b><h3>Проекты</h3></b>
-								<span></span><!-- icon -->
-							</a>
-						</li>
-						<li>
-							<a href="#cd-placeholder-3">
-								<b><h3>Создание</h3></b>
-								<span></span><!-- icon -->
-							</a>
-						</li>
-						<li>
-							<a href="#cd-placeholder-4">
-								<b><h3>Партнёры</h3></b>
-								<span></span><!-- icon -->
-							</a>
-						</li>
-						<li>
-							<a href="#cd-placeholder-5">
-								<b><h3>Статистика</h3></b>
-								<span></span><!-- icon -->
-							</a>
-						</li>
-					</ul>
-				</nav>
-		</div> <!-- .cd-secondary-nav -->
-		<main class="cd-main-content">
-		 
-			<section id="cd-placeholder-1" class="cd-section cd-container">
-			<span class="bel">	<h2>О нас</h2>
-				<p>
-					Все проекты компании CompanyName - уникальные ресурсы, основанные на инновационных идеях, которые в совокупности с глубокой аналитикой перспективных рынков, закладывают прочный фундамент, приводящий к рождению нестандартных и эффективных решений.
-<br><br>
-Наши методы – синтез фундаментальных знаний управления интернет-ресурсами и новейшие практические технологии. Эксклюзивный дизайн, программное содержание, наполнение и полный контроль - плюсы работы с нами.
-<br><br>
-Особое внимание мы уделяем изучению и пониманию бизнеса клиента, что в дальнейшем помогает достичь единогласия и плодотворного сотрудничества.
-<br><br>
-Глубокое исследование проблем, непрерывные эксперименты, адаптация интерфейсов, тестирование и SWOT-анализ, а главное простота и свобода. Все это и есть краеугольный камень, на котором строится наша работа.
-	<br><br>	
-<h5><font size="3" color="#baafaf" face="footlight mt light">Лидеры компании:</font></h5>
-	</p>  </span>	
-						<br><center>
-
-									<img src="img/rab1.jpg">	 				
-									<img src="img/rab1.jpg">
-									<img src="img/rab1.jpg">			
-									<img src="img/rab1.jpg">	 			
-						<br><br><br>
-						</center>
-			</section> <!-- #cd-placeholder-1 -->
-	</div>
-	
-
-				<div class="block2">
-					<section id="cd-placeholder-2" class="cd-section cd-container">
-						<h2>Проекты</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in 
-			velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed 
-			dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem 
-			rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum 
-			necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores 
-			velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, 
-			laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem 
-			ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, 
-			labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at 
-			quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem 
-			facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, 
-			similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit 
-			voluptatem provident ut veniam aliquid, labore culpa.
-							L  orem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in 
-			velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed 
-			dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem 
-			rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum 
-			necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores 
-			velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, 
-			laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem 
-			ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, 
-			labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at 
-			quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem 
-			facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, 
-			similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit 
-			voluptatem provident ut veniam aliquid, labore culpa.		
-						</p>
-					</section> <!-- #cd-placeholder-2 -->
-		
-		
-		
-			<section id="cd-placeholder-3" class="cd-section cd-container">
-				<span class="black">
-				<h2>Создание</h2></span>
-				<p>
-					
-					
+	  
+	  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+       
+    <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
+	  
+	  
+	  
+      <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Resource style -->
+      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      <title>Сайт</title>
+      <!--
+         <script type="text/javascript"> 
+         if (document.body.clientWidth <= 480) {
+         window.onload = "http://vandm2.ucoz.net/index.html";
+         }
+         </script> -->
+      <script type="text/javascript" language="JavaScript">
+         function init() {
+         var w = window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;
+         
+         
+         if (w <= 840){
+         document.getElementById("poln").style.display = "none";
+         document.getElementById("mal").style.display = "";
+         }
+         if (w >= 840){
+         document.getElementById("mal").style.display = "none";
+         document.getElementById("poln").style.display = "";
+         }
+         }
+         
+         
+               
+                 function calc() {
+                     var type_design = document.getElementById("type_design"); //получаем ссылку на элемент Select (Тип дизайна)
+                     var is_html = document.getElementById("is_html"); //получаем ссылку на чекбокс (Требуется верстка?)
+                     var count = document.getElementById("count"); //получаем ссылку на элемент input (Кол-во вариантов)
+                     var result = document.getElementById("result"); //получаем ссылку на элемент span, в него будем писать стоимость дизайна
+         			var verst = document.getElementById("verst"); 
+                     var dop_str = document.getElementById("dop_str");
+         var ch1 = document.getElementById("ch1"); 			
+         var ch2 = document.getElementById("ch2"); 			
+         var ch3 = document.getElementById("ch3"); 			
+         var ch4 = document.getElementById("ch4"); 			
+         var ch5 = document.getElementById("ch5"); 			
+         var ch6 = document.getElementById("ch6"); 			
+         var ch7 = document.getElementById("ch7"); 			
+         var ch8 = document.getElementById("ch8"); 			
+         var ch9 = document.getElementById("ch9"); 			
+                    
+         			
+         			
+         			
+                    var price = 0;
+                    price += parseInt(type_design.options[type_design.selectedIndex].value);
+         			price += parseInt(verst.options[verst.selectedIndex].value);
+         
+         			price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
+         			price += (ch1.checked == true) ? parseInt(ch1.value) : 0;
+         			price += (ch2.checked == true) ? parseInt(ch2.value) : 0;
+         			price += (ch3.checked == true) ? parseInt(ch3.value) : 0;
+         			price += (ch4.checked == true) ? parseInt(ch4.value) : 0;
+         			price += (ch5.checked == true) ? parseInt(ch5.value) : 0;
+         			price += (ch6.checked == true) ? parseInt(ch6.value) : 0;
+         			price += (ch7.checked == true) ? parseInt(ch7.value) : 0;
+         			price += (ch8.checked == true) ? parseInt(ch8.value) : 0;
+         			price += (ch9.checked == true) ? parseInt(ch9.value) : 0;
+         			
+                     price = parseInt(count.value) * price;
+         			
+         			price += parseInt(dop_str.value) * 500;
+         
+                     result.innerHTML = price;
+                 }
+         
+                 
+      </script>
+      <style> 
+<style>
+	.italic{
+	font-style: italic; 
+	}
+	.oblique{
+	font-style: oblique; 
+	}
+</style>
+	  
+      </style>
+      <style>
+         .bel{
+         color: #ded9d9; /* Цвет символа */
+         } 
+         .black{
+         color: black; /* Цвет символа */
+         } 
+      </style>
+      <style>
+         p.dline {
+         line-height: 2.4;
+         }
+      </style>
+   </head>
    
-						
-						
-						
-					<br>
-					<br>
-					
-						<center>
-						
-						<div>
-						<p class="dline">
-						
-						
-						
-						
-						
-							
-
-<a onclick id="b1"  rel="nofollow" class="knopka1">САЙТ-ВИЗИТКА</a>
-<a onclick id="b2"  rel="nofollow" class="knopka2">БИЗНЕС-САЙТ</a>
-<a onclick id="b3"  rel="nofollow" class="knopka3">ИНЫЕ ПРОЕКТЫ</a>
-<a onclick id="b4"  rel="nofollow" class="knopka4">ИНТЕРНЕТ-МАГАЗИН</a>
-
-						
-							
-						</p>
-						</div>
-						</center>
-					
-						<br>
-						<br>
-						<br>
-						<br>
-						
-								
-								<div id="d1" style="display: block">
-								<center><img src="img/sxema.png"></center>
-								</div>
-								
-<div id="d2" style="display: block">
-										<p>
-											Начиная свой бизнес, многие компании и предприниматели обращаются к огромной аудитории в Интернете. Для этого им необходимо создать свой сайт. Начинать лучше всего с простого, но запоминающегося сайта визитки. Чтобы Ваша визитная карточка в Интернете дала максимальный эффект, лучше всего обратиться к профессионалам. В Интернете полным-полно сайтов созданных на коленке. Результативность таких сайтов весьма сомнительна.
-											<br><br>
-											Сайт визитка стоит недорого, его создание не требует много времени и сил, информационной поддержки почти не требуется. Однако правильно выстроенный сайт помогает решить основную задачу – представление человека или компании в сети Интернет. Если над созданием вашей визитной карточки в Интернете поработали профессионалы, впоследствии ее можно трансформировать в корпоративный ресурс или Интернет-магазин: дополнить сайт разделами и сервисами.
-											<br><br>
-											Как правило, сайт визитка состоит всего из нескольких Интернет-страниц, в которых содержится исчерпывающая информация о человеке или компании, услугах и предложениях, контактные данные. В нашей студии вы можете заказать сайт визитку различного уровня сложности. Недорогой сайт визитка – хорошая возможность заявить о себе.
-												<br><br>&#8226Прототипы (проработка юзабилити)<br>
-												&#8226Уникальный дизайн (Создаем с нуля)<br>
-												&#8226Формы обратной связи<br>
-												&#8226Счетчик обратного отсчета<br>
-												&#8226Слайдеры<br>
-												&#8226Фотогалерея<br>
-												&#8226Наполнение сайта<br>
-												&#8226Установка Yandex metrika & Google analytics<br>
-												&#8226Перенос на ваш хостинг</p></span>
-								</div>
-								
-<div id="d3" style="display: block">
-									<p>Уникальное решение для малого и среднего бизнеса. Целью данного ресурса является предоставление информации о товарах или услугах организации. При разработке такого сайта открывается возможность увеличивать доход компании посредством привлечения целевой аудитории на сайт.</p>
-									<br><p>В настоящее время мы предлагаем разработку адаптивной версии сайта, что позволяет приспособить ресурс к изменяющимся форматам различных устройств, будь то телефон или планшет, широкоформатный монитор или ноутбук.</p>
-									<br><p>Бизнес-сайт может включать в себя каталог услуг, фотогалерею, новостную ленту, блог и другие функции.<br>
-										<br>&#8226Прототипы (проработка юзабилити)<br>
-										&#8226Уникальный дизайн (Создаем с нуля)<br>
-										&#8226Поиск по каталогу<br>
-										&#8226Формы обратной связи / заказа<br>
-										&#8226Возможность выставления цен<br>
-										&#8226Конвертер валют (Выставление в у.е. вывод в рублях)<br>
-										&#8226Слайдер<br>
-									&#8226	Блок товаров "Хит продаж"<br>
-										&#8226Фотогалерея<br>
-										&#8226Базовое наполнение сайта<br>
-										&#8226Установка metrika & analytics<br>
-										&#8226Первичная СЕО оптимизация<br>
-										&#8226Индивидуальная видео-инструкция<br>
-										&#8226Перенос на ваш хостинг</p>
-								
-								</div>
-								
-<div id="d4" style="display: block">
-									<p>Интернет-магазин - крупный информационный ресурс, позволяющий предлагать продукты или услуги целевой аудитории в любое время и в любом месте.</p>
-									<br><p>Мы предлагаем самые современные решения, способствующие поднятию бизнеса на совершенно новый уровень. Данный ресурс будет гордостью и станет продающим двигателем компании.</p>
-									<br><p>Разрабатывая интернет-магазин, нужно понимать, что успех зависит не только от ассортимента продукции и цен на нее, но и от внешней привлекательности и легкости восприятия информации. Благодаря профессионализму наших дизайнеров и программистов, опыту и инновационным решения, мы создаем конкурентные ресурсы.</p>
-									<br><p>Интернет-магазин включает в себя структурированный каталог товаров и услуг, функционал онлайн-заказа, корзину и личный кабинет для покупателей, новостную ленту и другие функции.
-										<br><br>&#8226Прототипы (проработка юзабилити)<br>
-										&#8226Уникальный дизайн (Создаем с нуля)<br>
-										&#8226Наполнение сайта (15 товаров/страниц)<br>
-										&#8226Установка Yandex metrika & Google analytics<br>
-										&#8226Стандартная корзина<br>
-										&#8226Сортировка по цене (от меньшего к большему и наоборот).<br>
-										&#8226Способ оплаты (нал/безнал)<br>
-										&#8226Настраиваемые способы доставки<br>
-										&#8226Настраиваемые хар-ки товара<br>
-										&#8226Индивидуальная видео-инструкция<br>
-										&#8226Поиск по каталогу<br></p>
-								
-								
-								</div>
-								<div style="display:none;" id="div4">
-										<p>К этой группе можно отнести уникальные заказы, долгосрочные сотрудничества, разработку крупных интернет магазинов, информационных или корпоративных порталов.</p>
-										<br><p>Все стратегии и бюджеты обсуждаются индивидуально.</p>
-										<br><p>По ссылке ниже Вы можете перейти к заполнению Брифа. С его помощью, еще до встречи с Вами, мы сможем глубже изучить тематику Вашего бизнеса, понять Ваши желания и приблизительно оценить стоимость разработки всего проекта.</p>
-								</div>
-						</p>
-						
-					
-					
-				</p>
-				
-						<br><br>
-						<p>
-					Думаете что сайт вам не по карману? Мы предлагаем вам прямо сейчас расчитать стоимость вашего сайта на нашем калькуляторе.
-			<br><br></p>
-				
-				<center><p>
-				<b>Тип сайта:</b><br/>
-        <select onchange="calc()" id="type_design">
-            <option value="0">Выбрать</option>
-            <option value="5000">Сайт визитка</option>
-            <option value="7000">Landing Page</option>
-            <option value="10000">Новостной сайт</option>
-            <option value="15000">Интерет магазин</option>
-        </select><br/>
-        <input type="checkbox" onchange="calc()" value="3000" id="is_html" /> <label for="is_html">Требуется наполнение?</label>
-        <br/>
-        Кол-во вариантов: <input type="text" id="count" value="1" onchange="calc()" />
-        <div>Стоимость дизайна сайта: <span id="result">0</span> руб.</div></p></center>
+   
+   
+   <body onload="init()">
+      <!-- Используется только для демонстрации -->
+      <div class="block1">
+         <section id="cd-intro">
+            <div id="cd-intro-tagline">
+               
+			   <br>
+			   <br>
+			   <br>
+			   <br>
+			   <img src="img/digital.png"><br>
+               <a href="" class="cd-btn"><img src="img/logo.png"></a><br><br>
+               <!--   <a href="" class="cd-btn">Мой сайт</a><br><br>   -->
+               <!-- <img src="img/vstup.png"><br> -->
+            </div>
+            <!-- #cd-intro-tagline -->
+         </section>
+         <!-- #cd-intro -->
+         <div class="cd-secondary-nav">
+            <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+            <nav>
+               <ul>
+                  <li>
+                     <a href="#cd-placeholder-1">
+                        <b>
+                           <h3>О нас</h3>
+                        </b>
+                        <span></span><!-- icon -->
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#cd-placeholder-2">
+                        <b>
+                           <h3>Проекты</h3>
+                        </b>
+                        <span></span><!-- icon -->
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#cd-placeholder-3">
+                        <b>
+                           <h3>Создание</h3>
+                        </b>
+                        <span></span><!-- icon -->
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#cd-placeholder-4">
+                        <b>
+                           <h3>Партнёры</h3>
+                        </b>
+                        <span></span><!-- icon -->
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#cd-placeholder-5">
+                        <b>
+                           <h3>Статистика</h3>
+                        </b>
+                        <span></span><!-- icon -->
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <!-- .cd-secondary-nav -->
+         <main class="cd-main-content">
+         <section id="cd-placeholder-1" class="cd-section cd-container">
+            <span class="bel">
+               <h2>О нас</h2>
+               <p>
+                  Все проекты компании CompanyName - уникальные ресурсы, основанные на инновационных идеях, которые в совокупности с глубокой аналитикой перспективных рынков, закладывают прочный фундамент, приводящий к рождению нестандартных и эффективных решений.
+                  <br><br>
+                  Наши методы – синтез фундаментальных знаний управления интернет-ресурсами и новейшие практические технологии. Эксклюзивный дизайн, программное содержание, наполнение и полный контроль - плюсы работы с нами.
+                  <br><br>
+                  Особое внимание мы уделяем изучению и пониманию бизнеса клиента, что в дальнейшем помогает достичь единогласия и плодотворного сотрудничества.
+                  <br><br>
+                  Глубокое исследование проблем, непрерывные эксперименты, адаптация интерфейсов, тестирование и SWOT-анализ, а главное простота и свобода. Все это и есть краеугольный камень, на котором строится наша работа.
+                  <br><br>	
+               <h5><font size="3" color="#baafaf" face="footlight mt light">Лидеры компании:</font></h5>
+               </p>  
+            </span>
+            <br>
+            <center>
+               <img src="img/rab1.jpg">	 				
+               <img src="img/rab1.jpg">
+               <img src="img/rab1.jpg">			
+               <img src="img/rab1.jpg">	 			
+               <br><br><br>
+            </center>
+         </section>
+         <!-- #cd-placeholder-1 -->
+      </div>
+      <div class="block5">
+	  
+	  
+         <section id="cd-placeholder-2" class="cd-section cd-container">
+            <h2>Проекты</h2>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in 
+               velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed 
+               dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem 
+               rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum 
+               necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores 
+               velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, 
+               laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem 
+               ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, 
+               labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at 
+               quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem 
+               facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, 
+               similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit 
+               voluptatem provident ut veniam aliquid, labore culpa.
+               L  orem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in 
+               velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed 
+               dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem 
+               rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum 
+               necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores 
+               velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, 
+               laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem 
+               ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, 
+               labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at 
+               quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem 
+               facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, 
+               similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit 
+               voluptatem provident ut veniam aliquid, labore culpa.		
+            </p>
+         </section>
+         <!-- #cd-placeholder-2 -->
+		 </div>
+		 <div class="block2">
+		 
+		 
+         <section id="cd-placeholder-3" class="cd-section cd-container">
+            
+               <h2>Создание</h2>
+            
+            
+            <center>
+               <div>
+                  <p class="dline">
+                     Если вы хотите сделать сайт для своего бизнеса, но у вас нет нужных специалистов в штате, вы можете заказать его:
+                     <br>
+                     <a onclick id="b1"  rel="nofollow" class="knopka1">У фрилансеров</a><br>
+                     <a onclick id="b2"  rel="nofollow" class="knopka2">В дизайн компании</a><br>
+                     <a onclick id="b3"  rel="nofollow" class="knopka3">Агенство интернет-маркетинга</a><br>
+                     <a onclick id="b4"  rel="nofollow" class="knopka4">В нашей Digital-студии</a><br>
+                     В чем плюсы и минусы каждого подхода? Давайте разбираться.	<br>
+                  </p>
+               </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="d1" style="display: block">
+               <p>
+               <h2>Что будет, если заказать сайт у фрилансеров</h2>
+               <p>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Заказав сайт на фрилансе, вы рискуете получить некачественную работу. Мы не имеем ничего против специалистов, которые работают удаленно, но наша практика показывает, что для создания правильного сайта команды фрилансеров недостаточно. Объясним, почему.
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Для создания сайта вам понадобится как минимум несколько специалистов: дизайнер, копирайтер со знаниями SEO, верстальщик и программист. Как правило, эти люди не общаются друг с другом и выполняют свою часть работы в удобное для них время. Из-за отсутствия коммуникаций страдает качество итогового продукта.
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Дизайнер рисует сайт, как он это видит. Копирайтер пишет текст, подгоняя его под уже нарисованный дизайн. Верстальщик верстает макеты, забывая про анимацию, которую запланировал дизайнер...
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Вы не поверите: но в огромном числе случаев из-за отсутствия общения между фрилансерами и недостатка внимательности банально забывают прописать метатеги на странице (что уж говорить о полноценной SEO-оптимизации). В итоге получается сайт, который неэффективен по всем параметрам. Да, скорее всего, вы заплатите за него меньше денег, чем если бы вашим сайтом занималась компания, но стоит ли это того? Здесь выбор за вами.
+                  <br>	
+                  <br>	
+				  
+				  </p>
+               <center><img  src="img/frilans.jpg">	</center>
+               <br>
+           <div class="oblique">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Если хотите дешево, наймите фрилансеров</div>
+			</div>
 			
-			</section> <!-- #cd-placeholder-3 -->
-		</div>
-		
-		<div class="block4">
-			<section id="cd-placeholder-4" class="cd-section cd-container">
-				<h2>Партнёры</h2>
-				<p>
-				CompanyName – это крупнейшая в России digital-студия, решающая бизнес-задачи клиентов. 
+            <div id="d2" style="display: none">
+               
+               <h2>	Что будет, если заказать сайт в компании, которая занимается только дизайном</h2><br><p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Создание сайта в компании, которая специализируется в веб-дизайне, стоит дороже, чем на фрилансе. Главный плюс этого подхода заключается в том, что здесь вам сделают действительно красивый сайт, сверстанный по всем канонам современной верстки. Но тексты и поисковую оптимизацию сайта вам все равно придется заказывать отдельно.
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; И вот здесь, скорее всего, возникнет проблема: дизайн уже готов, но структура сайта не оптимизирована под поисковые системы. И когда сеошник возьмется за свою работу, вам с огромной долей вероятности придется красивый дизайн переделывать. А это лишнее время и деньги.
+            <br><br>
+			<center><img  src="img/dizain.jpg">	</center><br></p>
+			<div class="oblique">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Если хотите красиво, наймите компанию, которая специализируется в дизайне</div>
+			</div>
+			
+			
+			
+			
+            <div id="d3" style="display: none">
+            <h2>   Почему создание сайта нужно заказывать у компании, которая разбирается в интернет-маркетинге
+</h2>
+<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Если вы хотите, чтобы сайт сразу начал приносить вам трафик и заявки (а иначе для чего он вообще нужен?), тогда вам следует заказать его создание в компании, которая может не только разработать красивый дизайн, но и оптимизировать его под поисковые системы.
 <br><br>
-Мы специализируемся на стратегических решениях в сфере digital. Мы знаем, как достичь ваших бизнес-целей с помощью интернет-маркетинга (рост оборота, прибыли, ROI и тд). Наши специалисты прекрасно владеют самыми актуальными инструментами интернет-маркетинга: контекстная, таргетированная и медийная реклама, SEO, SMM, технологии автоматизации и оптимизации, веб-аналитика, мобильная реклама, имиджевая реклама.
-<br><br>
-Партнерство в рамках группы компаний позволяет обеспечить комплексный подход к решению задач и гарантировать результат. Каждая из компаний холдинга обладает большим опытом и высоким уровнем компетенций в своей области.
-			<br>	
-				
-				
-				
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; И здесь мы имеем в виду не просто вписывание ключей в разделы, а:<br><br>
+</p><center><p>
+✔ сбор полноценного семантического ядра,<br>
+✔ распределение запросов по смысловым группам,<br>
+✔ создание структуры сайта в виде mind map,<br>
+✔ прописывание метатегов,<br>
+✔ оптимизация скорости загрузки сайта,<br>
+✔ обеспечение положительного пользовательского опыта.<br><br>
+</p></center>
+
+<center><img  src="img/merket.jpg">	</center><br>
+
+<div class="oblique">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Могут ли фрилансеры или дизайн-студия выполнить все эти работы? В большинстве случаев, нет</div>
+	<br><br>		
+
+<br>	</div>
+
+
+            <div id="d4" style="display: none">
+             <h2>  Мы предлагаем своим клиентам создание сайтов под ключ</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В эту услугу входят следующие работы:<br>
+</p><center><p>
+✔ Выявление особенностей бизнеса клиента, его преимуществ и недостатков (веб-аналитик)<br>
+✔Анализ конкурентной среды, анализ трафика сайтов-конкурентов (веб-аналитик)<br>
+✔Сбор семантического ядра (SEO-оптимизатор)<br>
+✔Создание карты релевантности (SEO-оптимизатор)<br>
+✔Определение структуры сайтов, создание mind map (SEO-оптимизатор)<br>
+✔Создание прототипов (UX-эксперт)<br>
+✔Написание текстов для разделов (копирайтер, редактор, корректор)<br>
+✔Создание дизайн-макетов для десктопов и мобильных устройств (UX-дизайнер)<br>
+✔Адаптивная и кроссбраузерная верстка и программирование (UI-специалист, программист)<br>
+✔Размещение сайта на тестовом сервере, проверка, отладка (программист)<br>
+✔Перенос сайта на основной домен (программист)</center></p><br><br>
+<h2>Почему при создании сайтов мы делаем акцент на UX?</h2>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UX (от англ. user experience, пользовательский опыт) – это то, как пользователи ведут себя на вашем сайте. Если опыт хороший – им нравится ваш сайт, они легко и комфортно в нем ориентируются – это сильно сказывается на всех показателях сайта:
+</p><center><p>
+✔Улучшаются поведенческие факторы. Падает процент отказов, увеличивается длина сессии, глубина просмотра и т. д.<br>
+✔Ваш сайт получает более высокие позиции в выдаче. Растет поисковый трафик.<br>
+✔Увеличивается конверсия и продажи.</center></p><br>
+<p>Главная проблема, с которой сталкиваются владельцы бизнеса – они платят большие деньги, но на выходе их сайт не приносит ни трафика, ни клиентов. Чтобы этого не происходило, мы задействуем в работе UX-экспертов, UX-дизайнеров, UI-специалистов (разработчики интерфейсов). Это люди с большим опытом работы в создании сайтов разных тематик. Они знают, как сделать так, чтобы пользователи выполняли нужное вам целевое действие (оставляли заявку на услугу, покупали товар, подписывались на рассылку) и не испытывали при этом трудностей. Как итог, у всех продающих страниц сайта высокая конверсия, и вы получаете прибыль.
+        </p>    </div>
+		
+		
+		
+		
+		
+            <div style="display:none;" id="div4">
+               <p>К этой группе можно отнести уникальные заказы, долгосрочные сотрудничества, разработку крупных интернет магазинов, информационных или корпоративных порталов.</p>
+               <br>
+               <p>Все стратегии и бюджеты обсуждаются индивидуально.</p>
+               <br>
+               <p>По ссылке ниже Вы можете перейти к заполнению Брифа. С его помощью, еще до встречи с Вами, мы сможем глубже изучить тематику Вашего бизнеса, понять Ваши желания и приблизительно оценить стоимость разработки всего проекта.</p>
+            </div>
+            </p>
+            </p>
+            <br><br>
+            <p>
+               Думаете что сайт вам не по карману? Мы предлагаем вам прямо сейчас расчитать стоимость вашего сайта на нашем калькуляторе.
+               <br><br>
+            </p>
+            <center>
+               <p>
+                  <b>Тип сайта:</b><br/>
+                  <select class="calc" onchange="calc()" id="type_design">
+                     <option value="0">Выбрать</option>
+                     <option value="6000">Сайт визитка</option>
+                     <option value="8000">Копоративный сайт</option>
+                     <option value="15000">Интерет магазин</option>
+                     <option value="20000">Информационный сайт</option>
+                  </select>
+                  <br/>
+                  <select class="calc" onchange="calc()" id="verst">
+                     <option value="0">Выбрать</option>
+                     <option value="11500">Адаптивная</option>
+                     <option value="9000">Резиновая</option>
+                     <option value="5500">Фиксированная</option>
+                  </select>
+                  <br>
+                  <b>
+                     Дополнительные возможности:<br>
+               <table  width="100%" >
+               <tr> 
+               <td align="center" valign="top">
+               <input class="checkbox" type="checkbox" onchange="calc()" value="3000" id="is_html" /> <label for="is_html">Наполнение</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1000" id="ch1" /> <label for="ch1">Акции и спецпредложения</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1000" id="ch2" /> <label for="ch2">Схема проезда (Яндекс/Google)</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="500" id="ch3" /> <label for="ch3">Прайс-лист</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1500" id="ch4" /> <label for="ch4">Лента новостей</label>
+               <br>
+               </td>
+               <td align="center" valign="top">
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1000" id="ch5" /> <label for="ch5">Обратный звонок</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1000" id="ch6" /> <label for="ch6">Регистрация пользователей</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1500" id="ch7" /> <label for="ch7">Калькулятор услуг</label>
+               <br>
+               <input class="checkbox" type="checkbox" onchange="calc()" value="1500" id="ch8" /> <label for="ch8">Голосования и опросы</label>
+               <br>
+			   <input class="checkbox" type="checkbox" onchange="calc()" value="500" id="ch9" /> <label for="ch9">Слайдеры, галереи и видео</label>
+               <br>
+               </td>
+               </tr>
+               </table>
+               </b>
+			   
+			   <br>
+               Количество дополнительных страниц на сайте: <input class="input" width="50" type="text" id="dop_str" value="0" onchange="calc()" />
+               <br>
+               Кол-во вариантов: <input class="input" width="50" type="text" id="count" value="1" onchange="calc()" />
+               <br>
+               <br>
+			   <div>Стоимость дизайна сайта: <span id="result">0</span> руб.</big></div>
+               </p>
+            </center>
+         </section>
+         <!-- #cd-placeholder-3 -->
+      </div>
+	  
+	  
+	  
+	  
+	  
+      <div class="block3">
+      <section id="cd-placeholder-4" class="cd-section cd-container">
+         <h2>Партнёры</h2>
+         <p>
+            CompanyName – это крупнейшая в России digital-студия, решающая бизнес-задачи клиентов. 
+            <br><br>
+            Мы специализируемся на стратегических решениях в сфере digital. Мы знаем, как достичь ваших бизнес-целей с помощью интернет-маркетинга (рост оборота, прибыли, ROI и тд). Наши специалисты прекрасно владеют самыми актуальными инструментами интернет-маркетинга: контекстная, таргетированная и медийная реклама, SEO, SMM, технологии автоматизации и оптимизации, веб-аналитика, мобильная реклама, имиджевая реклама.
+            <br><br>
+            Партнерство в рамках группы компаний позволяет обеспечить комплексный подход к решению задач и гарантировать результат. Каждая из компаний холдинга обладает большим опытом и высоким уровнем компетенций в своей области.
+            <br>	
+         </p>
+         <br>
+         <div id="mal">
+            <img src="img-part/mal.png">
+         </div>
+         <div id="poln">
+            <center>
+               <table border="0px" >
+                  <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                              <img src="img-part/1.png">
+                           </div>
+                           <div class="back">
+                              <img src="img-part/adobe.png">
+                           </div>
+                        </div>
+                     </div>
+                  </th>
+                  <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                              <img src="img-part/2.png">
+                           </div>
+                           <div class="back">
+                              <img src="img-part/facebook.png">
+                           </div>
+                        </div>
+                     </div>
+                  </th>
+                  <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                              <img src="img-part/3.png">
+                           </div>
+                           <div class="back">
+                              <img src="img-part/canon.png">
+                           </div>
+                        </div>
+                     </div>
+                  </th>
+                  <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                              <img src="img-part/4.png">
+                           </div>
+                           <div class="back">
+                              <img src="img-part/cisco.png">
+                           </div>
+                        </div>
+                     </div>
+                  </th>
+                  <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                              <img src="img-part/5.png">
+                           </div>
+                           <div class="back">
+                              <img src="img-part/dell.png">
+                           </div>
+                        </div>
+                     </div>
+                  </th>
+                  <tr>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/6.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/digg.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/7.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/ea.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/8.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/ebay.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/9.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/google.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/10.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/hp.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                  <tr>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/11.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/microsoft.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/12.png">
+                              </div>
+                              <div class="back">
+                                 <img src="img-part/mysql.png">
+                              </div>
+                           </div>
+                        </div>
+                     </th>
+                     <th>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <img src="img-part/13.png">
+                              </div>
+                              <div class="back">
+                                 <div align="center">
+                                    <img src="img-part/sony.png"> 
+                                 </div>
+                              </div>
+                           </div>
+                     </th>
+                     <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                     <div class="flipper">
+                     <div class="front">
+                     <img src="img-part/14.png">
+                     </div>
+                     <div class="back">
+                     <img src="img-part/vimeo.png">
+                     </div>
+                     </div>
+                     </div>
+                     </th>
+                     <th>
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                     <div class="flipper">
+                     <div class="front">
+                     <img src="img-part/15.png">
+                     </div>
+                     <div class="back">
+                     <img src="img-part/yahoo.png">
+                     </div>
+                     </div>
+                     </div>
+                     </th>
+                  <tr>
+                  <tr><th>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                  <div class="front">
+                  <img src="img-part/16.png">
+                  </div>
+                  <div class="back">
+                  <img src="img-part/lenovo.png">
+                  </div>
+                  </div>
+                  </div>
+                  </th>
+                  <th>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                  <div class="front">
+                  <img src="img-part/17.png">
+                  </div>
+                  <div class="back">
+                  <img src="img-part/asus.png">
+                  </div>
+                  </div>
+                  </div>
+                  </th>
+                  <th>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                  <div class="front">
+                  <img src="img-part/18.png">
+                  </div>
+                  <div class="back">
+                  <img src="img-part/sap.png">
+                  </div>
+                  </div>
+                  </div>
+                  </th>
+                  <th>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                  <div class="front">
+                  <img src="img-part/19.png">
+                  </div>
+                  <div class="back">
+                  <img src="img-part/foto.png">
+                  </div>
+                  </div>
+                  </div>
+                  </th>
+                  <th>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                  <div class="front">
+                  <img src="img-part/20.png">
+                  </div>
+                  <div class="back">
+                  <img src="img-part/ya.png">
+                  </div>
+                  </div>
+                  </div>
+                  </th>
+                  <tr>
+               </table>
+            </center>
+            </div>			
+      </section>
+      <!-- #cd-placeholder-4 -->
+      </div>
+      <div class="block4">
+         <section id="cd-placeholder-5" class="cd-section cd-container">
+            <h2>Статистика</h2>
+            <p>
+               laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, 
+               reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis 
+               pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. 
+               Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla 
+               suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, 
+               voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit 
+               temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam 
+               quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias 
+               saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur 
+               iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque 
+               nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint 
+               in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum 
+               enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi 
+               optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga 
+               sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi 
+               nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos 
+               consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore 
+               veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, 
+               neque, tempora. Accusamus similique labore harum in ut repellat. Earum iusto non ex perspiciatis sequi 
+               a, provident nam optio, vitae ea vel illum excepturi aut fugiat quos. Fugit facere a, quidem quia 
+               perferendis ipsum impedit eaque repellendus esse, tenetur repellat natus voluptatem ab possimus 
+               laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, 
+               reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis 
+               pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. 
+               Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla 
+               suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, 
+               voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit 
+               temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam 
+               quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias 
+               saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur 
+               iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque 
+               nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos.
+            </p>
+         </section>
+         <!-- #cd-placeholder-5 -->
+      </div>
+      
+        
+	  
+	  
+	  
+	  
+	  <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h5 class="logo"><a href="#"> 
+<img src="img/logo.png">
+					</a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9dc3878c9f50c36299a9f44eb78168775b211ec1a577720f131d2e54c441857&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
 			
-				
+		<div class="footer-copyright">
+            <p>© 2018 Copyright Text </p>
+        </div>
+    
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-					
-				</p><br>
-				<div id="mal">
-				<img src="img-part/mal.png">
-				</div>
-				<div id="poln">
-					<center>
- <table border="0px" >
- 
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/1.png">
-										</div>
-										<div class="back">
-											<img src="img-part/adobe.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/2.png">
-										</div>
-										<div class="back">
-											<img src="img-part/facebook.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/3.png">
-										</div>
-										<div class="back">
-											<img src="img-part/canon.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/4.png">
-										</div>
-										<div class="back">
-											<img src="img-part/cisco.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/5.png">
-										</div>
-										<div class="back">
-											<img src="img-part/dell.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-		<tr>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/6.png">
-										</div>
-										<div class="back">
-											<img src="img-part/digg.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/7.png">
-										</div>
-										<div class="back">
-											<img src="img-part/ea.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/8.png">
-										</div>
-										<div class="back">
-											<img src="img-part/ebay.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/9.png">
-										</div>
-										<div class="back">
-											<img src="img-part/google.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/10.png">
-										</div>
-										<div class="back">
-											<img src="img-part/hp.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-			<tr>
-		<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/11.png">
-										</div>
-										<div class="back">
-											<img src="img-part/microsoft.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/12.png">
-										</div>
-										<div class="back">
-											<img src="img-part/mysql.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/13.png">
-										</div>
-										<div class="back">
-										
-										
-										<div align="center">
- <form>
-  <input type="button" value="кнопка для любимой" onClick="Input()">
- </form>
-</div>	
-											<!-- <img src="img-part/sony.png"> -->
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/14.png">
-										</div>
-										<div class="back">
-											<img src="img-part/vimeo.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/15.png">
-										</div>
-										<div class="back">
-											<img src="img-part/yahoo.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-		<tr>
-		<tr><th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/16.png">
-										</div>
-										<div class="back">
-											<img src="img-part/lenovo.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/17.png">
-										</div>
-										<div class="back">
-											<img src="img-part/asus.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/18.png">
-										</div>
-										<div class="back">
-											<img src="img-part/sap.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/19.png">
-										</div>
-										<div class="back">
-											<img src="img-part/foto.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-				<th>
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									<div class="flipper">
-										<div class="front">
-											<img src="img-part/20.png">
-										</div>
-										<div class="back">
-											<img src="img-part/ya.png">
-										</div>
-									</div>
-									
-						</div>
-				</th>
-		<tr>
-		
-</table>
-</center>
-		</div>			
-			</section> <!-- #cd-placeholder-4 -->
-		</div>
-			
-			
-		
-		<div class="block1">
-			<section id="cd-placeholder-5" class="cd-section cd-container">
-				<h2>Статистика</h2>
-				<p>
-					laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, 
-reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis 
-pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. 
-Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla 
-suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, 
-voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit 
-temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam 
-quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias 
-saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur 
-iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque 
-nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint 
-in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum 
-enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi 
-optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga 
-sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi 
-nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos 
-consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore 
-veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, 
-neque, tempora. Accusamus similique labore harum in ut repellat. Earum iusto non ex perspiciatis sequi 
-a, provident nam optio, vitae ea vel illum excepturi aut fugiat quos. Fugit facere a, quidem quia 
-perferendis ipsum impedit eaque repellendus esse, tenetur repellat natus voluptatem ab possimus 
-laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, 
-reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis 
-pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. 
-Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla 
-suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, 
-voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit 
-temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam 
-quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias 
-saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur 
-iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque 
-nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos.
-				</p>
-			</section> <!-- #cd-placeholder-5 -->
-		</div>	
-		
-		
-		<div class="block5">
-		
-			
-				<p class="dline">
-					<center>
-						<a href="mailto:Vinokurovalexandr@mail.ru"> <span class="podv"><q><b>Vinokurovalexandr@mail.ru</b></q></span></a><br> 
-						<span class="podv">тел. +7 (930) 474 43 44</span><br><br>
-						<a href="http://vk.com"><img src="img/v.jpg"> </a>
-						<a href="https://www.facebook.com"><img src="img/f.jpg"> </a>
-						<a href="https://plus.google.com"><img src="img/g.jpg"> </a><br><br>
-					
-					</center>
-				</p>
-				
-			
-		</div>
-		
-		
-		
-		
-		
-	
-	
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-
-
-
-
-	
-	<script>
-$(window).scroll(function () {
-var movement = -parseInt($(this).scrollTop() / 2);
-$('.block1').css({
-backgroundPosition: 'center ' + movement + 'px'
-});
-});
-</script>
-
-<script>
-$(window).scroll(function () {
-var movement = -parseInt($(this).scrollTop() / 20);
-$('.block2').css({
-backgroundPosition: 'center ' + movement + 'px'
-});
-});
-</script>
-
-<script>
-$(window).scroll(function () {
-var movement = -parseInt($(this).scrollTop() / 13);
-$('.block3').css({
-backgroundPosition: 'center ' + movement + 'px'
-});
-});
-</script>
-
-<script>
-$(window).scroll(function () {
-var movement = -parseInt($(this).scrollTop() / 2.5);
-$('.block4').css({
-backgroundPosition: 'center ' + movement + 'px'
-});
-});
-</script>
-
-
-
-
-<script>
-get=document.querySelector.bind(document)
-b1=get("#b1"); 
-b2=get("#b2");
-b3=get("#b3");
-b4=get("#b4");
- d1=get("#d1");
- d2=get("#d2");
- d3=get("#d3");
- d4=get("#d4")
-
-f=function(){
-   switch (this){
-      case b1: d1.style.display="block"; d2.style.display="none";  d3.style.display="none"; d4.style.display="none";return
-      case b2: d2.style.display="block"; d1.style.display="none"; d3.style.display="none"; d4.style.display="none"; return
-      case b3: d3.style.display="block"; d2.style.display="none"; d1.style.display="none"; d4.style.display="none";  return
-      case b4: d3.style.display="none"; d2.style.display="none"; d1.style.display="none"; d4.style.display="block";return
-   }
-}
-
-b1.onclick=f
-b2.onclick=f
-b3.onclick=f
-b4.onclick=f
-
-</script>
-
-
-
-</body>
+	  
+	  
+	  
+	  
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/main.js"></script> <!-- Resource jQuery -->
+      <script>
+         $(window).scroll(function () {
+         var movement = -parseInt($(this).scrollTop() / 2);
+         $('.block1').css({
+         backgroundPosition: 'center ' + movement + 'px'
+         });
+         });
+      </script>
+      <script>
+         $(window).scroll(function () {
+         var movement = -parseInt($(this).scrollTop() / 20);
+         $('.block2').css({
+         backgroundPosition: 'center ' + movement + 'px'
+         });
+         });
+      </script>
+      <script>
+         $(window).scroll(function () {
+         var movement = -parseInt($(this).scrollTop() / 13);
+         $('.block3').css({
+         backgroundPosition: 'center ' + movement + 'px'
+         });
+         });
+      </script>
+      <script>
+         $(window).scroll(function () {
+         var movement = -parseInt($(this).scrollTop() / 2.5);
+         $('.block4').css({
+         backgroundPosition: 'center ' + movement + 'px'
+         });
+         });
+      </script>
+	  <script>
+         $(window).scroll(function () {
+         var movement = -parseInt($(this).scrollTop() / 7);
+         $('.block5').css({
+         backgroundPosition: 'center ' + movement + 'px'
+         });
+         });
+      </script>
+	  
+	  
+      <script>
+         get=document.querySelector.bind(document)
+         b1=get("#b1"); 
+         b2=get("#b2");
+         b3=get("#b3");
+         b4=get("#b4");
+          d1=get("#d1");
+          d2=get("#d2");
+          d3=get("#d3");
+          d4=get("#d4")
+         
+         f=function(){
+            switch (this){
+               case b1: d1.style.display="block"; d2.style.display="none";  d3.style.display="none"; d4.style.display="none";return
+               case b2: d2.style.display="block"; d1.style.display="none"; d3.style.display="none"; d4.style.display="none"; return
+               case b3: d3.style.display="block"; d2.style.display="none"; d1.style.display="none"; d4.style.display="none";  return
+               case b4: d3.style.display="none"; d2.style.display="none"; d1.style.display="none"; d4.style.display="block";return
+            }
+         }
+         
+         b1.onclick=f
+         b2.onclick=f
+         b3.onclick=f
+         b4.onclick=f
+         
+      </script>
+   </body>
 </html>

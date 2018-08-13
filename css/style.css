@@ -613,6 +613,7 @@ th {
 
  
 a.knopka1 {
+	margin-top: 200px; /* Отступ сверху */
   color: black;  /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
@@ -625,12 +626,13 @@ padding: .5em 1.48em; /* отступ от текста */
 a.knopka1:active { background: rgb(152,15,0); } /* при нажатии */
 
 a.knopka1:hover { background: #e61919; 
-padding: .7em 1.98em;   
+padding: 0.5em 1.7em;   
 }
  
  
  
  a.knopka2 {
+	 margin-top: 20px; /* Отступ сверху */
   color: black;  /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
@@ -645,13 +647,14 @@ padding: .5em 1.48em; /* отступ от текста */
 a.knopka2:active { background: rgb(152,15,0); } /* при нажатии */
 
 a.knopka2:hover  { background: #fc790d; 
-padding: .7em 1.98em;  
+padding: 0.5em 1.7em;  
 }
 
 
 
 
 a.knopka3 {
+	margin-top: 20px; /* Отступ сверху */
   color: black;  /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
@@ -665,14 +668,14 @@ padding: .5em 1.48em; /* отступ от текста */
 a.knopka3:active { background: rgb(152,15,0); } /* при нажатии */
 
 a.knopka3:hover  { background: #3b9dff; 
-padding: .7em 1.98em;   
+padding: 0.5em 1.7em;  
 }
 
 
 
 
 a.knopka4 {
-	
+	margin-top: 20px; /* Отступ сверху */
   color: black; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
@@ -687,7 +690,7 @@ padding: .5em 1.48em; /* отступ от текста */
 a.knopka4:active { background: rgb(152,15,0); } /* при нажатии */
 
 a.knopka4:hover  { background: #b0d3f7; 
-padding: .7em 1.98em;  
+padding: 0.5em 1.7em;  
 }
 
 
@@ -760,11 +763,11 @@ padding: .7em 1.98em;
    
    
    
-   .block1 {
-    background:url(../img/fon1.jpg)  fixed center 0px;
+.block1 {
+background:url(../img/kofe.jpg)  fixed center 0px;
 }
 
-.block2 {background:url(../img/fon2.png)  fixed center 0px;
+.block2 {background:url(../img/klyaksa.png)  fixed center 0px;
 }
 
 .block3 {
@@ -772,22 +775,215 @@ padding: .7em 1.98em;
 }
 
 .block4 {
-    background:url(..img/fon44.png)  fixed center 0px;
+    background:url(../img/klyaksa.png)  fixed center 0px;
 }
 .block5 {
-    background:url(../img/fon333.jpg)  fixed center 0px;
+    background:url(../img/telka.jpg)  fixed center 0px;
 }
 
 
 
-   
 
 
 
-   
-   
 
+
+
+
+.calc{text-decoration:none; text-align:center; 
+margin-top: 20px; /* Отступ сверху */
+ padding:11px 32px; 
+ border:groove 3px #919692; 
+ -webkit-border-radius:9px;
+ -moz-border-radius:9px; 
+ border-radius: 9px; 
+ font:14px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #e80303, inset 0px 0px 16px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #e80303,  inset 0px 0px 16px #ffffff;  
+ box-shadow:0px 0px 2px #e80303, inset 0px 0px 16px #ffffff;  
   
-   
-   
+   -webkit-transition: background 0s ease-in;
+ -moz-transition:  background 0s ease-in;
+ -o-transition:  background 0s ease-in;
+ transition:  background 0s ease-in;}
+ 
+ .calc:hover{
+ padding:11px 32px; 
+ border:groove 3px #b00909; 
+ -webkit-border-radius:9px;
+ -moz-border-radius:9px; 
+ border-radius: 9px; 
+font:14px Verdana, Geneva, sans-serif;
+ font-weight:bold; 
+ color:#f5f8fa; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
   
+ }
+ 
+ .calc:active{
+ padding:11px 32px; 
+ border:groove 3px #b00909; 
+ -webkit-border-radius:9px;
+ -moz-border-radius:9px; 
+ border-radius: 9px; 
+font:14px Verdana, Geneva, sans-serif;
+ font-weight:bold; 
+ color:#f5f8fa; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+ 
+ 
+   .input {
+    width: 40px; /* Ширина поля в пикселах */
+	 padding:11px ; 
+ border:groove 3px #919692; 
+ -webkit-border-radius:9px;
+ 
+ font:14px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #e80303, inset 0px 0px 16px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #e80303,  inset 0px 0px 16px #ffffff;  
+ box-shadow:0px 0px 2px #e80303, inset 0px 0px 16px #ffffff;  
+  
+   -webkit-transition: background 0s ease-in;
+ -moz-transition:  background 0s ease-in;
+ -o-transition:  background 0s ease-in;
+ transition:  background 0s ease-in;}
+   } 
+   
+   
+   .input:hover{
+	    width: 40px; /* Ширина поля в пикселах */
+	 padding:11px ;
+ border:groove 3px #b00909; 
+ -webkit-border-radius:9px;
+ 
+font:14px Verdana, Geneva, sans-serif;
+ font-weight:bold; 
+ color:#f5f8fa; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+ 
+ 
+ .input:active{
+	width: 40px; /* Ширина поля в пикселах */
+	 padding:11px ;
+ border:groove 3px #b00909; 
+ -webkit-border-radius:9px;
+ -moz-border-radius:9px; 
+ border-radius: 9px; 
+font:14px Verdana, Geneva, sans-serif;
+ font-weight:bold; 
+ color:#f5f8fa; 
+ background-color:#080808; 
+ background-image: -moz-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -webkit-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -o-linear-gradient(top, #080808 0%, #5a5c5c 100%); 
+ background-image: -ms-linear-gradient(top, #080808 0% ,#5a5c5c 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5c5c', endColorstr='#5a5c5c',GradientType=0 ); 
+ background-image: linear-gradient(top, #080808 0% ,#5a5c5c 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+ 
+ 
+ 
+ 
+ 
+
+.checkbox:not(checked) {
+	margin-top: 20px; /* Отступ сверху */
+  
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+  transition: .2s;
+}
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #5a5c5c;
+  box-shadow: 0 2px 5px black;
+  transition: .2s;
+}
+.checkbox:checked + label:before {
+  background: #ed0e0e;
+}
+.checkbox:checked + label:after {
+  left: 26px;
+}
+.checkbox:focus + label:before {
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px black;
+}
+
+p1 {
+font-style: italic;
+}
+
