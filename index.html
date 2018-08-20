@@ -140,7 +140,7 @@
                   <li>
                      <a href="#cd-placeholder-1">
                         <b>
-                           <h3>О нас</h3>
+                           <h4>О нас</h4>
                         </b>
                         <span></span><!-- icon -->
                      </a>
@@ -148,7 +148,7 @@
                   <li>
                      <a href="#cd-placeholder-2">
                         <b>
-                           <h3>Проекты</h3>
+                           <h4>Проекты</h4>
                         </b>
                         <span></span><!-- icon -->
                      </a>
@@ -156,7 +156,7 @@
                   <li>
                      <a href="#cd-placeholder-3">
                         <b>
-                           <h3>Создание</h3>
+                           <h4>Создание</h4
                         </b>
                         <span></span><!-- icon -->
                      </a>
@@ -164,7 +164,7 @@
                   <li>
                      <a href="#cd-placeholder-4">
                         <b>
-                           <h3>Партнёры</h3>
+                           <h4>Партнёры</h4>
                         </b>
                         <span></span><!-- icon -->
                      </a>
@@ -172,7 +172,7 @@
                   <li>
                      <a href="#cd-placeholder-5">
                         <b>
-                           <h3>Статистика</h3>
+                           <h4>Статистика</h4>
                         </b>
                         <span></span><!-- icon -->
                      </a>
@@ -427,13 +427,52 @@
                <br>
 			   <div>Стоимость дизайна сайта: <span id="result">0</span> руб.</big></div>
                </p>
-            </center>
+            <br>
+            <br>
+			</center>
          </section>
+	 
+	  <center>
+	  <h3>
+	  Хотите уточнить стоимость? Оставьте свои данные и мы с Вами свяжемся<br><br></h3>
+	  
+	   </center>
+	  
+	  
+	  
+	  <form class="contact_form" action="contact-form.php" method="post">
+	<p>
+            <label for="name">Имя:</label>
+            <input type="text"  name="name" placeholder="Введите ваше имя" required />
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Введите электронный адрес" required />
+            <span class="form_hint">Правильный формат "mail@mail.ru"</span>
+        </p>
+        <p>
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+            <span class="form_hint">Правильный формат "+7-999-999-99-99"</span>
+        </p>
+        
+        <p>
+            <label for="message">Текст сообщения:</label>
+            <textarea name="message" cols="40" rows="6" required ></textarea>
+        </p>
+		<input name="bezspama" type="text" style="display:none" value="" />
+        <p>
+        	<button class="button1" type="submit">Отправить сообщение</button>
+			<br>
+			<br><br>
+        </p>
+</form>
+
+
          <!-- #cd-placeholder-3 -->
       </div>
 	  
-	  
-	  
+	 
 	  
 	  
       <div class="block3">
@@ -708,6 +747,10 @@
       <div class="block4">
          <section id="cd-placeholder-5" class="cd-section cd-container">
             <h2>Статистика</h2>
+			
+			
+			
+			
             <p>
                laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, 
                reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis 
@@ -756,43 +799,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
-                    <h5 class="logo"><a href="#"> 
-<img src="img/logo.png">
-					</a></h2>
+                    
+					
                 </div>
                 <div class="col-sm-2">
-                    <h5>Get started</h5>
+                    <h5>Карта сайта</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
+					
+					<li><a href="#cd-placeholder-1">О нас</a></li>
+                        
+                           
+                        
+                     
+                     
+					 
+                        
+                        <li><a href="#cd-placeholder-2">Проекты</a></li>
+                        <li><a href="#cd-placeholder-3">Создание</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h5>About us</h5>
+                    <h5>&nbsp;</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#cd-placeholder-4">Партнёры</a></li>
+                        <li><a href="#cd-placeholder-5">Статистика</a></li>
+                        <li><a href="#">&nbsp;</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
-                </div>
+                
+				<div class="col-sm-2">
+                    
+					<h5>&nbsp;Вопросы?</h5>
+					
+					
+                    <form class="contact_form1" action="contact-form1.php" method="post">
+	<p>
+            <label for="name">Имя:</label>
+            <input type="text"  name="name" placeholder="Введите ваше имя" required />
+        </p>
+        
+        <p>
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+           
+        </p>
+        
+       
+		<input name="bezspama" type="text" style="display:none" value="" />
+        <p><br>
+        	<button class="submit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspПерезвоните&nbsp;мне&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+			
+        </p>
+</form>
+
+
+
+                
             </div>
+        </div>
         </div>
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9dc3878c9f50c36299a9f44eb78168775b211ec1a577720f131d2e54c441857&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
 			
@@ -820,7 +884,7 @@
       </script>
       <script>
          $(window).scroll(function () {
-         var movement = -parseInt($(this).scrollTop() / 20);
+         var movement = -parseInt($(this).scrollTop() / 25);
          $('.block2').css({
          backgroundPosition: 'center ' + movement + 'px'
          });
